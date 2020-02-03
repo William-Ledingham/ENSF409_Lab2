@@ -1,17 +1,49 @@
 import java.io.*;
+
+/**
+ * Provides data fields and methods to create a Player in the Tic-Tac-Toe game.
+ * Can check if the player has won and prompt the player when it is there turn.
+ * 
+ * @author William Ledingham
+ * @version 1.0
+ * @since 2020-02-02
+ *
+ */
 public class Player {
 
+	/**
+	 * String the that contains the name of the player.
+	 */
 	private String name;
+	/**
+	 * Board the player uses in the game.
+	 */
 	private Board board;
+	/**
+	 * Reference to the other player object.
+	 */
 	private Player opponent;
+	/**
+	 * The mark the player uses on the board (X or O).
+	 */
 	private char mark;
 	
+	/**
+	 * Constructs Player with a name and mark type.
+	 * @param name Players name.
+	 * @param mark Players mark.
+	 */
 	Player(String name, char mark)
 	{
 		this.name = name;
 		this.mark = mark;
 	}
 	
+	/**
+	 * Checks for player win and passes turn to opponent.
+	 * Calls makeMove() and displays board.
+	 * @throws IOException
+	 */
 	public void play() throws IOException
 	{
 		makeMove();
@@ -34,6 +66,10 @@ public class Player {
 		opponent.play();
 	}
 	
+	/**
+	 * Prompts user for row and column input and adds mark to the board.
+	 * @throws IOException
+	 */
 	public void makeMove () throws IOException
 	{
 		BufferedReader stdin;
@@ -59,11 +95,18 @@ public class Player {
 		
 	}
 	
+	/**
+	 * Set the opponent for this player.
+	 * @param opponent
+	 */
 	public void setOpponent(Player opponent)
 	{
 		this.opponent = opponent;
 	}
-	
+	/**
+	 * Set the board for this player.
+	 * @param theBoard
+	 */
 	public void setBoard(Board theBoard)
 	{
 		this.board = theBoard;
