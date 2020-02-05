@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 /**
- * Provides data fields and methods to create a Referee in the Tic-Tac-Tow game.
+ * Provides data fields and methods to create a Referee in the Tic-Tac-Toe game.
  * Referee starts the game and sets the players opponents and hands the play off
  * initially to the X player.
  * 
@@ -45,8 +45,8 @@ public class Referee {
 	
 	/**
 	 * Sets playing board.
-	 * @param board
-	 */
+	 * @param board Board object to be set as playing board.
+	 */ 
 	public void setBoard(Board board)
 	{
 		this.board = board;
@@ -54,7 +54,7 @@ public class Referee {
 	
 	/**
 	 * Sets player with O mark.
-	 * @param oPlayer
+	 * @param oPlayer Player object that is the O player.
 	 */
 	public void setoPlayer(Player oPlayer)
 	{
@@ -63,7 +63,7 @@ public class Referee {
 	
 	/**
 	 * Sets player with X mark.
-	 * @param xPlayer
+	 * @param xPlayer Player object that is the X player
 	 */
 	public void setxPlayer(Player xPlayer)
 	{

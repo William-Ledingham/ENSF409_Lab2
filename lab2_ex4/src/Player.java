@@ -20,7 +20,7 @@ public class Player {
 	 */
 	private Board board;
 	/**
-	 * Reference to the other player object.
+	 * Reference to the other player object that is the opponent for the game.
 	 */
 	private Player opponent;
 	/**
@@ -97,7 +97,7 @@ public class Player {
 	
 	/**
 	 * Set the opponent for this player.
-	 * @param opponent
+	 * @param opponent Player object to be set as the opponent player.
 	 */
 	public void setOpponent(Player opponent)
 	{
@@ -105,7 +105,7 @@ public class Player {
 	}
 	/**
 	 * Set the board for this player.
-	 * @param theBoard
+	 * @param theBoard Board object to be set as playing board.
 	 */
 	public void setBoard(Board theBoard)
 	{
