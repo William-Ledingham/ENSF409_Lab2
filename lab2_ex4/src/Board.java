@@ -3,6 +3,9 @@
 
 /**
  * 
+ * Implements a board for the Tic-Tac-Toe game that holds the value of the spaces on the game board.
+ * This object will store mark values, display the board, and check for a winner.
+ * 
  * @author Given file for exercise 4
  * @version 1.0
  * @since 2020-02-02

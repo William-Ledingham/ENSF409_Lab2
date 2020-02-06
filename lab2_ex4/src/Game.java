@@ -4,6 +4,7 @@ import java.io.*;
 
 /**
  * Provides Board and Referee objects for setup of the Game and allows the game to be run.
+ * 
  * @author Given file for exercise 4
  * @version 1.0
  * @since 2020-02-02
